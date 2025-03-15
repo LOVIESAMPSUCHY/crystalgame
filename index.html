@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Chemiczna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gra Chemiczna: Synteza Substancji</h1>
+        <p>Wybierz składniki i stwórz substancję!</p>
+        <div id="game-area">
+            <div id="ingredients">
+                <h2>Składniki:</h2>
+                <button onclick="selectIngredient('chem1')">Chemikalia 1</button>
+                <button onclick="selectIngredient('chem2')">Chemikalia 2</button>
+                <button onclick="selectIngredient('chem3')">Chemikalia 3</button>
+            </div>
+            <div id="reaction">
+                <h2>Reakcja:</h2>
+                <p id="reaction-text">Wybierz składniki, aby rozpocząć reakcję.</p>
+            </div>
+            <div id="result">
+                <h2>Wynik:</h2>
+                <p id="result-text">Brak wyniku.</p>
+            </div>
+        </div>
+        <button onclick="resetGame()">Resetuj grę</button>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
